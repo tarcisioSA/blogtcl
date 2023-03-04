@@ -13,7 +13,7 @@
   
 }
 *{
-  padding: 0px;
+  padding: 3px;
   margin: 0px;
 }
 header{
@@ -82,13 +82,16 @@ footer{
 img#oledg2{
   margin: auto;
   max-width: 100%;
+  width: 500px;
   align-items: center;
   
 }
   
 
 article p{
-  text-align: justify;
+  text-align: left;
+  font-size: 11pt;
+  padding: 1px;
 }
 header h1{
   font-size: 30pt;
