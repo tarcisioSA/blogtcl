@@ -1,0 +1,123 @@
+@charset "UFT-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,wght@1,900&family=Oswald:wght@700&family=Padyakke+Expanded+One&family=Roboto+Mono:wght@500&family=Sofia+Sans:ital,wght@1,400;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+:root{
+  --fonte-anton: 'Anton', sans-serif;
+  --fonte-destaque: 'Bebas Neue', cursive;
+  --fonte-crimson: 'Crimson Text', serif;
+  
+}
+*{
+  padding: 0px;
+  margin: 0px;
+}
+header{
+  margin: auto;
+  
+  width: 100%;
+  height: 155px;
+  text-align: center;
+  font-family: var(--fonte-destaque);
+  color: rgb(255, 255, 255);
+  padding-top: 0px
+  
+  
+}
+header p{
+  font-size: 25pt;
+  padding: 0px;
+}
+img#foto{
+  height: 130px;
+}
+
+main{
+  margin: auto;
+  max-width: 1000px;
+  max-height: 100%;
+  padding: 30px;
+  margin-top: 10px;
+}
+article{
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+nav{
+  
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.301);
+  font-size: 18pt;
+  position: static;
+  
+  
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: var(--fonte-destaque);
+  font-size: 18pt;
+  padding: 10px;
+  margin: auto;
+}
+
+nav a:hover{
+  background-color: rgb(110, 110, 110);
+  color: white;
+  
+}
+
+footer{
+  background-color: rgb(211, 77, 77);
+  color: rgb(255, 255, 255);
+  font-family: var(--fonte-destaque);
+  margin-top: 20px;
+  text-align: center;
+  font-size: 13pt;
+}
+
+img#nanocell{
+  margin: auto;
+  max-width: 100%;
+  width: 500px;
+  align-items: center;
+  
+}
+  
+
+article p{
+  text-align: left;
+  font-size: 11pt;
+  padding: 1px;
+}
+header h1{
+  font-size: 30pt;
+  padding-top: 20px;
+}
+h1{
+  font-size: 20pt;
+}
+h2{
+  padding: 20px;
+  font-size: 15pt;
+}
+p{
+  padding: 20px;
+}
+aside ul{
+  columns: 2;
+}
+aside{
+  max-width: 400px;
+}
+aside li{
+  font-size: 12pt;
+}
+aside h2{
+  font-size: 10pt;
+}
