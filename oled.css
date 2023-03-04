@@ -103,3 +103,9 @@ h2{
 p{
   padding: 20px;
 }
+aside ul{
+  columns: 2;
+}
+aside{
+  max-width: 400px;
+}
