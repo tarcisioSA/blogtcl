@@ -12,6 +12,10 @@
   --fonte-crimson: 'Crimson Text', serif;
   
 }
+*{
+  padding: 0px;
+  margin: 0px;
+}
 
 header{
   margin: auto;
@@ -106,6 +110,10 @@ div#paramount:hover{
 }
 h2{
   padding: 20px;
+  font-size: 15pt;
+}
+h1{
+  font-size: 20pt;
 }
 p{
   padding: 20px;
