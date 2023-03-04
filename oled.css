@@ -50,9 +50,10 @@ article{
 }
 nav{
   padding: 5px;
+  color: black;
+  text-align: center;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.301);
   background-color: rgba(0, 0, 0, 0.966);
-  font-size: 18pt;
 }
 
 nav a {
@@ -65,7 +66,7 @@ nav a {
 }
 
 nav a:hover{
-  background-color: rgb(110, 110, 110);
+  background-color: rgb(252, 82, 82);
   color: white;
   
 }
