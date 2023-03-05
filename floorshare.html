@@ -86,22 +86,63 @@
             <span class="input-group-text" >Outros</span>
             <input type="text" class="form-control" id="outros" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
           </div>
-          <input class="btn btn-danger" type="button" value="CALCULAR FLOORSHARE" onclick="calcular()">
+          
         </div>
-        <div id="resultado">
+        
 
-
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#ExemploModalCentralizado" onclick="calcular()">
+          CALCULAR FLOORSHARE
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="TituloModalCentralizado">FLOORSHARE</h5>
+              </div>
+              <div class="modal-body">
+                <div >
+                  <div id="resultado">
+                  
+                  
+                  </div>
+                  <canvas id="myChart"></canvas>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="recarregar()">Fechar</button>
+                <button type="button" class="btn btn-primary" onclick="recarregar()">CALCULAR NOVAMENTE</button>
+              </div>
+            </div>
+          </div>
         </div>
 
 
-        <div id="chart_wrap">
-          <div id="piechart"></div>
-        </div>
+        
+
+       
+       
 
       </section>
+      
 
 
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+      
+    </script>
+
+   
+    
+    
+
+  
+    
+    
 
     <footer class="card-footer bg-danger bg-gradient border-success text-white"><p>Site não oficial criado para fins acadêmicos</p></footer>
 
