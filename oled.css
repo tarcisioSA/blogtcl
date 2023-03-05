@@ -42,6 +42,7 @@ main{
   max-height: 100%;
   padding: 30px;
   margin-top: 10px;
+  border-radius: 10px;
 }
 article{
   margin-left: 10px;
