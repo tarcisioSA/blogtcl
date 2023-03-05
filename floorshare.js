@@ -25,35 +25,33 @@ function calcular(){
 
     
     
-    
-        google.charts.load("current", {packages:["corechart"]});
+    google.charts.load("current", {packages:["corechart"]});
     google.charts.setOnLoadCallback(drawChart);
     function drawChart() {
       var data = google.visualization.arrayToDataTable([
-        ['Language', 'Speakers (in millions)'],
+        ['Task', 'Hours per Day'],
         ['LG',  lgResultado],
-        ['Samsung',  ssgResultado],
-        ['Philco', philcoResultado],
-        ['tcl', tclResultado],
-        ['outros', outrosResultado],
+        ['SAMSUNG',  ssgResultado],
+        ['PHILCO', philcoResultado],
+        ['TCL', tclResultado],
+        ['OUTROS', outrosResultado],
       ]);
 
-    var options = {
-      legend: 'none',
-      pieSliceText: 'label',
-      title: 'FLOORSHARE',
-      pieStartAngle: 100,
-    };
+      var options = {
+        title: 'FLOORSHARE',
+        is3D: false,
+        colors: ['red', 'blue', 'black', 'green', 'yellow']
+      };
 
       var chart = new google.visualization.PieChart(document.getElementById('piechart'));
       chart.draw(data, options);
     }
-
-  // Instantiate and draw our chart, passing in some options.
-  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-  chart.draw(data, options);
     
 }
+
+
+
+
 
 
   
