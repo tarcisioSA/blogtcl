@@ -128,7 +128,7 @@ font-weight: bold;
 }
 
 .myBackground {
-  background-image: url(background.avif);
+  background-image: url(arquivos/background.avif);
   color: white;
   height: 300px;
   max-width: 100%;
