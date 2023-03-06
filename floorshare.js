@@ -21,6 +21,7 @@ function calcular(){
 
   if(lg.value.length == 0 || ssg.value.lenght == 0 || philco.value.lenght == 0 || tcl.value.lenght == 0 || outros.value.lenght == 0){
     window.alert("Erro, preencha um dos espaços abaixo: ")
+  
   }else{
     resultado.innerHTML = `LG: ${lgResultado.toFixed(2)}% -  ${lg.value}Peças</br>Samsung: ${ssgResultado.toFixed(2)}% -  ${ssg.value}Peças</br>Philco: ${philcoResultado.toFixed(2)}% -  ${philco.value}Peças</br>TCL: ${tclResultado.toFixed(2)}% -  ${tcl.value}Peças</br>Outros: ${outrosResultado.toFixed(2)}% -  ${outros.value}Peças</br>Total ${total} peças`
 
