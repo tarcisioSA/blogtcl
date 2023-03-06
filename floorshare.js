@@ -21,7 +21,7 @@ function calcular(){
   toshibaResultado = (toshiba.value*100) / total
   outrosResultado = (outros.value*100) / total
 
-  if(lg.value.length == 0 || ssg.value.lenght == 0 || philco.value.lenght == 0 || tcl.value.lenght == 0 || outros.value.lenght == 0 || toshiba.value.lenght == 0){
+  if(lg.value.length == 0 || ssg.value.length == 0 || philco.value.length == 0 || tcl.value.length == 0 || outros.value.length == 0 || toshiba.value.length == 0){
     window.alert("Erro, preencha um dos espaços abaixo: ")
   
   }else{
