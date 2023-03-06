@@ -29,13 +29,14 @@ function calcular(){
     
     new Chart(ctx, {
       type: 'pie',
+      
       data: {
         labels: ['LG', 'SAMSUNG', 'PHILCO', 'TCL', 'OUTROS'],
         
         datasets: [{
           label: '# QTD TVs',
           data: [lgResultado, ssgResultado, philcoResultado, tclResultado, outrosResultado],
-          backgroundColor: ["red", "blue", "black", "green", "orange"],
+          backgroundColor: ["#ef233c", "#4361ee", "#293241", "#7cb518", "#ffd60a"],
           borderWidth: 1
         }]
       },
