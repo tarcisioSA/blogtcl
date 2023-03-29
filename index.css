@@ -122,7 +122,7 @@ h1{
   font-size: 20pt;
 }
 p{
-  padding: 20px;
+  padding: 0px;
   font-size: 14pt;
 }
 .myBackground {
@@ -133,5 +133,9 @@ p{
 }
 main h1{
   font-size: 30pt;
+  font-weight: bolder;
+}
+main h2{
+  font-size: 20pt;
   font-weight: bolder;
 }
