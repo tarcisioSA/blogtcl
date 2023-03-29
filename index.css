@@ -101,13 +101,9 @@ div#canaltech{
   max-width: 800px;
   
   margin: auto;
-  padding: 10px;
+  padding: 30px;
   
   
-}
-div#oledweek{
-  padding: 15px;
-  max-width: 100%;
 }
 article p{
   text-align: justify;
@@ -134,4 +130,8 @@ p{
   color: white;
   height: 300px;
   
+}
+main h1{
+  font-size: 30pt;
+  font-weight: bolder;
 }
