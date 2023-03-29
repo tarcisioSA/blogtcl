@@ -97,6 +97,14 @@ div#paramount{
   
   
 }
+div#canaltech{
+  max-width: 800px;
+  
+  margin: auto;
+  padding: 10px;
+  
+  
+}
 div#oledweek{
   padding: 15px;
   max-width: 100%;
@@ -119,6 +127,7 @@ h1{
 }
 p{
   padding: 20px;
+  font-size: 14pt;
 }
 .myBackground {
   background-image: url(arquivos/wallpaper.jpg);
