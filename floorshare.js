@@ -53,7 +53,7 @@ function calcular(){
         datasets: [{
           label: '# QTD TVs',
           data: [tclResultado, ssgResultado, philcoResultado, lgResultado, toshibaResultado,philipsResultado, vizzionResultado],
-          backgroundColor: ["#d00000", "#4361ee", "#293241", "#ff5a5f","#f77f00",#00009C, "#ffd60a"],
+          backgroundColor: ["#d00000", "#4361ee", "#293241", "#ff5a5f","#f77f00","#00009C", "#ffd60a"],
           borderWidth: 1
         }]
       },
