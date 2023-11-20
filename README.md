@@ -1,4 +1,4 @@
 # BLOG TCL
 
- <a href="https://tarcisiosa.github.io/bloGTCL">BLOG TCL</a>
+ <a href="https://tarcisiosa.github.io/blogtcl">BLOG TCL</a>
  
