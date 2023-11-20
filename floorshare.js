@@ -35,7 +35,7 @@ function calcular(){
 
  
  
-    resultado.innerHTML = `TCL: ${tclResultado.toFixed(2)}% -  ${tcl.value} Peças</br>Samsung: ${ssgResultado.toFixed(2)}% -  ${ssg.value} Peças</br>Philco: ${philcoResultado.toFixed(2)}% -  ${philco.value} Peças</br>TCL: ${lgResultado.toFixed(2)}% -  ${lg.value} Peças</br>Vizzion: ${vizzionResultado.toFixed(2)}% -  ${vizzion.value} Peças</br>Toshiba: ${toshibaResultado.toFixed(2)}% - ${toshiba.value} Peças</br>Total ${total} peças`
+    resultado.innerHTML = `TCL: ${tclResultado.toFixed(2)}% -  ${tcl.value} Peças</br>Samsung: ${ssgResultado.toFixed(2)}% -  ${ssg.value} Peças</br>Philco: ${philcoResultado.toFixed(2)}% -  ${philco.value} Peças</br>LG: ${lgResultado.toFixed(2)}% -  ${lg.value} Peças</br>Vizzion: ${vizzionResultado.toFixed(2)}% -  ${vizzion.value} Peças</br>Toshiba: ${toshibaResultado.toFixed(2)}% - ${toshiba.value} Peças</br>Total ${total} peças`
 
     const ctx = document.getElementById('myChart');
     
