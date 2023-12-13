@@ -10,10 +10,7 @@ function calcular(){
   var vizzion = document.getElementById("vizzion")
   var philips = document.getElementById("philips")
   var aiwa = document.getElementById("aiwa")
-<<<<<<< HEAD
   var aoc = document.getElementById('aoc')
-=======
->>>>>>> 304ad35956a7d40f830beae1e2c49c820f2f9873
   var resultado = document.getElementById("resultado")
 
   if(lg.value.length == " "){
@@ -35,16 +32,11 @@ function calcular(){
   if(aiwa.value.length == " "){
     aiwa.value = 0
   }
-<<<<<<< HEAD
   if (aoc.value.length == " "){
     aoc.value = 0
   }
 
   var total = Number(lg.value) + Number(ssg.value) + Number(philco.value) + Number(tcl.value) + Number(toshiba.value) + Number(vizzion.value) + Number(philips.value) + Number(aiwa.value) + Number(aoc.value)
-=======
-
-  var total = Number(lg.value) + Number(ssg.value) + Number(philco.value) + Number(tcl.value) + Number(toshiba.value) + Number(vizzion.value) + Number(philips.value) + Number(aiwa.value)
->>>>>>> 304ad35956a7d40f830beae1e2c49c820f2f9873
 
   lgResultado = (lg.value*100) / total
   ssgResultado = (ssg.value*100) / total
@@ -54,19 +46,15 @@ function calcular(){
   vizzionResultado = (vizzion.value*100) / total
   philipsResultado = (philips.value*100) / total
   aiwaResultado = (aiwa.value*100) / total
-<<<<<<< HEAD
   aocResultado = (aoc.value*100) / total
 
   totalPorcetagem = lgResultado + ssgResultado + philcoResultado + tclResultado+toshibaResultado + vizzionResultado + philipsResultado + aiwaResultado + aocResultado
-=======
->>>>>>> 304ad35956a7d40f830beae1e2c49c820f2f9873
 
  
  
     resultado.innerHTML = 
     `TCL: ${tclResultado.toFixed(2)}% -  ${tcl.value} Peças</br>
     Samsung: ${ssgResultado.toFixed(2)}% -  ${ssg.value} Peças</br>
-<<<<<<< HEAD
     LG: ${lgResultado.toFixed(2)}% -  ${lg.value} Peças</br>
     Philips: ${philipsResultado.toFixed(2)}% - ${philips.value} Peças</br>
     Philco: ${philcoResultado.toFixed(2)}% -  ${philco.value} Peças</br>
@@ -78,15 +66,6 @@ function calcular(){
     
     
     Total ${total} peças | ${totalPorcetagem.toFixed(2)}%`
-=======
-    Philco: ${philcoResultado.toFixed(2)}% -  ${philco.value} Peças</br>
-    LG: ${lgResultado.toFixed(2)}% -  ${lg.value} Peças</br>
-    Vizzion: ${vizzionResultado.toFixed(2)}% -  ${vizzion.value} Peças</br>
-    Toshiba: ${toshibaResultado.toFixed(2)}% - ${toshiba.value} Peças</br>
-    Philips: ${philipsResultado.toFixed(2)}% - ${philips.value} Peças</br>
-    Aiwa: ${aiwaResultado.toFixed(2)}% - ${aiwa.value} Peças</br>
-    Total ${total} peças`
->>>>>>> 304ad35956a7d40f830beae1e2c49c820f2f9873
 
     const ctx = document.getElementById('myChart');
     
@@ -94,21 +73,12 @@ function calcular(){
       type: 'pie',
       
       data: {
-<<<<<<< HEAD
         labels: ['TCL', 'SAMSUNG', 'PHILCO', 'LG', 'TOSHIBA','Philips','VIZZION','AIWA', 'AOC'],
         
         datasets: [{
           label: '# QTD TVs',
           data: [tclResultado, ssgResultado, philcoResultado, lgResultado, toshibaResultado,philipsResultado, vizzionResultado, aiwaResultado, aocResultado],
           backgroundColor: ["#d00000", "#4361ee", "#293241", "#ff5a5f","#f77f00","#00009C", "#ffd60a", "#993399", "#d3d3d3 "],
-=======
-        labels: ['TCL', 'SAMSUNG', 'PHILCO', 'LG', 'TOSHIBA','Philips','VIZZION','AIWA'],
-        
-        datasets: [{
-          label: '# QTD TVs',
-          data: [tclResultado, ssgResultado, philcoResultado, lgResultado, toshibaResultado,philipsResultado, vizzionResultado, aiwaResultado],
-          backgroundColor: ["#d00000", "#4361ee", "#293241", "#ff5a5f","#f77f00","#00009C", "#ffd60a", "#993399"],
->>>>>>> 304ad35956a7d40f830beae1e2c49c820f2f9873
           borderWidth: 1
         }]
       },
