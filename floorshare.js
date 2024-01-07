@@ -59,7 +59,7 @@ function calcular(){
  
     resultado.innerHTML = 
     `TCL: ${tclResultado.toFixed(2)}% -  ${tcl.value} Peças</br>
-    Semp: ${sempResultado.toFixed(2)}% = ${semp.value} Peças</br>
+    Semp: ${sempResultado.toFixed(2)}% - ${semp.value} Peças</br>
     Samsung: ${ssgResultado.toFixed(2)}% -  ${ssg.value} Peças</br>
     LG: ${lgResultado.toFixed(2)}% -  ${lg.value} Peças</br>
     Philips: ${philipsResultado.toFixed(2)}% - ${philips.value} Peças</br>
