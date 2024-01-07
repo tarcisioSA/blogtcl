@@ -2,10 +2,11 @@
 
 
 function calcular(){
+  var tcl = document.getElementById("tcl")
+  var semp = document.getElementById('semp')
   var lg = document.getElementById("lg")
   var ssg = document.getElementById("samsung")
   var philco = document.getElementById("philco")
-  var tcl = document.getElementById("tcl")
   var toshiba = document.getElementById("toshiba")
   var vizzion = document.getElementById("vizzion")
   var philips = document.getElementById("philips")
@@ -35,8 +36,11 @@ function calcular(){
   if (aoc.value.length == " "){
     aoc.value = 0
   }
+  if (semp.value.length == " "){
+    semp.value = 0
+  }
 
-  var total = Number(lg.value) + Number(ssg.value) + Number(philco.value) + Number(tcl.value) + Number(toshiba.value) + Number(vizzion.value) + Number(philips.value) + Number(aiwa.value) + Number(aoc.value)
+  var total = Number(lg.value) + Number(ssg.value) + Number(philco.value) + Number(tcl.value) + Number(toshiba.value) + Number(vizzion.value) + Number(philips.value) + Number(aiwa.value) + Number(aoc.value) + Number(semp.value)
 
   lgResultado = (lg.value*100) / total
   ssgResultado = (ssg.value*100) / total
@@ -47,13 +51,15 @@ function calcular(){
   philipsResultado = (philips.value*100) / total
   aiwaResultado = (aiwa.value*100) / total
   aocResultado = (aoc.value*100) / total
+  sempResultado = (semp.value*100) / total
 
-  totalPorcetagem = lgResultado + ssgResultado + philcoResultado + tclResultado+toshibaResultado + vizzionResultado + philipsResultado + aiwaResultado + aocResultado
+  totalPorcetagem = lgResultado + ssgResultado + philcoResultado + tclResultado+toshibaResultado + vizzionResultado + philipsResultado + aiwaResultado + aocResultado + sempResultado
 
  
  
     resultado.innerHTML = 
     `TCL: ${tclResultado.toFixed(2)}% -  ${tcl.value} Peças</br>
+    Semp: ${sempResultado.toFixed(2)}% = ${semp.value} Peças</br>
     Samsung: ${ssgResultado.toFixed(2)}% -  ${ssg.value} Peças</br>
     LG: ${lgResultado.toFixed(2)}% -  ${lg.value} Peças</br>
     Philips: ${philipsResultado.toFixed(2)}% - ${philips.value} Peças</br>
@@ -73,12 +79,12 @@ function calcular(){
       type: 'pie',
       
       data: {
-        labels: ['TCL', 'SAMSUNG', 'PHILCO', 'LG', 'TOSHIBA','Philips','VIZZION','AIWA', 'AOC'],
+        labels: ['TCL', 'SEMP', 'SAMSUNG', 'PHILCO', 'LG', 'TOSHIBA','PHILIPS','VIZZION','AIWA', 'AOC'],
         
         datasets: [{
           label: '# QTD TVs',
           data: [tclResultado, ssgResultado, philcoResultado, lgResultado, toshibaResultado,philipsResultado, vizzionResultado, aiwaResultado, aocResultado],
-          backgroundColor: ["#d00000", "#4361ee", "#293241", "#ff5a5f","#f77f00","#00009C", "#ffd60a", "#993399", "#d3d3d3 "],
+          backgroundColor: ["#d00000","#3c096c", "#4361ee", "#293241", "#ff5a5f","#f77f00","#00009C", "#ffd60a", "#993399", "#d3d3d3 "],
           borderWidth: 1
         }]
       },
